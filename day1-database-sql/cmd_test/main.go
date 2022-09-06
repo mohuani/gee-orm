@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	geeorm "gee-orm/day1-database-sql"
+	"geeorm"
 	_ "github.com/mattn/go-sqlite3"
 )
 
 func main() {
-	engine, _ := geeorm.NewEngine("sqlite3", "./gee.db")
+	engine, _ := geeorm.NewEngine("sqlite3", "gee.db")
 	defer engine.Close()
 
 	s := engine.NewSession()

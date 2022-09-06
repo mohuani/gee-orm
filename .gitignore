@@ -101,3 +101,4 @@ export_presets.cfg
 .mono/
 data_*/
 
+/day1-database-sql/gee.db
